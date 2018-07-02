@@ -40,6 +40,7 @@
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.checkBoxNativeOnly = new System.Windows.Forms.CheckBox();
             this.hexBox = new ClipboardTest.HexDisplay();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,12 +55,12 @@
             // 
             // listBoxFormats
             // 
-            this.listBoxFormats.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.listBoxFormats.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxFormats.FormattingEnabled = true;
             this.listBoxFormats.Location = new System.Drawing.Point(12, 25);
             this.listBoxFormats.Name = "listBoxFormats";
-            this.listBoxFormats.Size = new System.Drawing.Size(260, 121);
+            this.listBoxFormats.Size = new System.Drawing.Size(360, 121);
             this.listBoxFormats.TabIndex = 1;
             this.listBoxFormats.SelectedIndexChanged += new System.EventHandler(this.listBoxFormats_SelectedIndexChanged);
             // 
@@ -74,8 +75,8 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.CausesValidation = false;
@@ -84,7 +85,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.ShortcutsEnabled = false;
-            this.richTextBox1.Size = new System.Drawing.Size(26, 89);
+            this.richTextBox1.Size = new System.Drawing.Size(126, 84);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             this.richTextBox1.WordWrap = false;
@@ -93,7 +94,7 @@
             // 
             this.linkLabelClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabelClear.AutoSize = true;
-            this.linkLabelClear.Location = new System.Drawing.Point(241, 149);
+            this.linkLabelClear.Location = new System.Drawing.Point(341, 149);
             this.linkLabelClear.Name = "linkLabelClear";
             this.linkLabelClear.Size = new System.Drawing.Size(31, 13);
             this.linkLabelClear.TabIndex = 4;
@@ -103,8 +104,8 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BackColor = System.Drawing.SystemColors.Window;
             this.textBox1.CausesValidation = false;
@@ -113,7 +114,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ShortcutsEnabled = false;
-            this.textBox1.Size = new System.Drawing.Size(29, 89);
+            this.textBox1.Size = new System.Drawing.Size(35, 84);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "";
             this.textBox1.WordWrap = false;
@@ -121,46 +122,48 @@
             // browserControl1
             // 
             this.browserControl1.AllowWebBrowserDrop = false;
-            this.browserControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.browserControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.browserControl1.CausesValidation = false;
             this.browserControl1.IsWebBrowserContextMenuEnabled = false;
-            this.browserControl1.Location = new System.Drawing.Point(79, 165);
+            this.browserControl1.Location = new System.Drawing.Point(85, 165);
             this.browserControl1.MinimumSize = new System.Drawing.Size(20, 20);
             this.browserControl1.Name = "browserControl1";
-            this.browserControl1.Size = new System.Drawing.Size(37, 89);
+            this.browserControl1.Size = new System.Drawing.Size(31, 84);
             this.browserControl1.TabIndex = 6;
             this.browserControl1.WebBrowserShortcutsEnabled = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Location = new System.Drawing.Point(122, 165);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(98, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // propertyGrid1
             // 
-            this.propertyGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.propertyGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.propertyGrid1.Location = new System.Drawing.Point(157, 165);
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(83, 89);
+            this.propertyGrid1.Size = new System.Drawing.Size(103, 84);
             this.propertyGrid1.TabIndex = 8;
             // 
             // checkBoxNativeOnly
             // 
             this.checkBoxNativeOnly.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBoxNativeOnly.AutoSize = true;
-            this.checkBoxNativeOnly.Location = new System.Drawing.Point(193, 8);
+            this.checkBoxNativeOnly.Checked = global::radix.ClipboardViewer.Properties.Settings.Default.NativeOnly;
+            this.checkBoxNativeOnly.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::radix.ClipboardViewer.Properties.Settings.Default, "NativeOnly", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBoxNativeOnly.Location = new System.Drawing.Point(293, 8);
             this.checkBoxNativeOnly.Name = "checkBoxNativeOnly";
             this.checkBoxNativeOnly.Size = new System.Drawing.Size(79, 17);
             this.checkBoxNativeOnly.TabIndex = 10;
@@ -170,20 +173,35 @@
             // 
             // hexBox
             // 
-            this.hexBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.hexBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.hexBox.BackColor = System.Drawing.SystemColors.Window;
             this.hexBox.CausesValidation = false;
             this.hexBox.Location = new System.Drawing.Point(246, 165);
             this.hexBox.Name = "hexBox";
-            this.hexBox.Size = new System.Drawing.Size(26, 89);
+            this.hexBox.Size = new System.Drawing.Size(126, 84);
             this.hexBox.TabIndex = 9;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = global::radix.ClipboardViewer.Properties.Settings.Default.TopMost;
+            this.checkBox1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::radix.ClipboardViewer.Properties.Settings.Default, "TopMost", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox1.Location = new System.Drawing.Point(203, 8);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(84, 17);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.Text = "Keep on top";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 266);
+            this.ClientSize = new System.Drawing.Size(384, 261);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.checkBoxNativeOnly);
             this.Controls.Add(this.hexBox);
             this.Controls.Add(this.propertyGrid1);
@@ -195,10 +213,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBoxFormats);
             this.Controls.Add(this.label1);
+            this.DataBindings.Add(new System.Windows.Forms.Binding("TopMost", global::radix.ClipboardViewer.Properties.Settings.Default, "TopMost", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(400, 300);
             this.Name = "MainForm";
             this.Text = "radix Clipboard Viewer";
+            this.TopMost = global::radix.ClipboardViewer.Properties.Settings.Default.TopMost;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -219,6 +240,7 @@
         private System.Windows.Forms.PropertyGrid propertyGrid1;
         private HexDisplay hexBox;
         private System.Windows.Forms.CheckBox checkBoxNativeOnly;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

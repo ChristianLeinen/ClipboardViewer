@@ -14,6 +14,7 @@ namespace ClipboardTest
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+            radix.ClipboardViewer.Properties.Settings.Default.Save();
             //System.Diagnostics.Trace.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.SendTo));
 
             //System.Reflection.Assembly asm = System.Reflection.Assembly.GetEntryAssembly();

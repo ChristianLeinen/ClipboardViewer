@@ -317,9 +317,11 @@ namespace ClipboardTest
         }
 #else
         [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool AddClipboardFormatListener(IntPtr hwnd);
 
         [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool RemoveClipboardFormatListener(IntPtr hwnd);
 
         protected override void WndProc(ref Message m)
@@ -336,7 +338,6 @@ namespace ClipboardTest
                     this.UpdateDisplayFormats();
                     break;
             }
-
             base.WndProc(ref m);
         }
 #endif
