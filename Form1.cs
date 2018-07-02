@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace ClipboardTest
 {
-    [Serializable]
+    //[Serializable]
     public partial class MainForm : Form
     {
         public MainForm()
@@ -141,7 +141,6 @@ namespace ClipboardTest
                 }
                 else if (!string.IsNullOrEmpty(dataFormat))
                 {
-                    Horst:
                     object format = Clipboard.GetData(dataFormat);
                     if (format is MemoryStream)
                     {
